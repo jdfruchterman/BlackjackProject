@@ -50,4 +50,5 @@ public class BJDealerHand extends Hand {
 		}
 		return handValue;
 	}
+	
 }
