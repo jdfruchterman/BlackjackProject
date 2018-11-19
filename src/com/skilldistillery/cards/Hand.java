@@ -29,22 +29,15 @@ public void addCard(Card card) {
 	
 }
 public void clearHand() {
-	// needed for blackjack?
-	// loop through list and set each value to null
 }
 public List<Card> getCards(){
-	// needed for blackjack?
-	// needs completion
 	return hand;
 }
 @Override
 public String toString() {
 	//needs completion
-	return "Hand [hand=" + hand + "]";
+	return "" + hand;
 }
-//public abstract String dealerMysteryToString();
-//public abstract int getDealerValue();
-//public abstract String get(int i);
 
 
 
