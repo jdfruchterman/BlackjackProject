@@ -1,10 +1,15 @@
-package com.skilldistillery.cards;
+package com.skilldistillery.blackjack;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BlackjackHand extends Hand {
+import com.skilldistillery.cards.Card;
+import com.skilldistillery.cards.Hand;
+
+public class BJDealerHand extends Hand {
+
 	private List<Card> hand = new ArrayList<>();
+
 
 	@Override
 	public int getHandValue() {
@@ -36,28 +41,13 @@ public class BlackjackHand extends Hand {
 		return super.toString();
 	}
 
-	@Override
-	public int hashCode() {
-		// TODO Auto-generated method stub
-		return super.hashCode();
+	public int getDealerValue () {
+		int handValue = 0;
+		for (int i = 0; i < (hand.size() -1); i++) {
+			// loop through hand, add up values of ranks
+		handValue = handValue + hand.get(i).getValue();
+		
+		}
+		return handValue;
 	}
-
-	@Override
-	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		return super.equals(obj);
-	}
-
-	@Override
-	protected Object clone() throws CloneNotSupportedException {
-		// TODO Auto-generated method stub
-		return super.clone();
-	}
-
-	@Override
-	protected void finalize() throws Throwable {
-		// TODO Auto-generated method stub
-		super.finalize();
-	}
-	
 }

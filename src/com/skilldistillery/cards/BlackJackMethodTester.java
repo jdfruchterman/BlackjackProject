@@ -8,12 +8,14 @@ public class BlackJackMethodTester {
 		deck.shuffle();
 		Hand playerHand = new BlackjackHand();
 
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 4; i++) {
 			playerHand.addCard(deck.dealCard());
 		}
 		System.out.println(playerHand);
 		System.out.println(playerHand.getHandValue());
-
+		
+		
+		
 //		for (int i = 0; i < 52; i++) {
 //		deck.shuffle();
 //		Card card = deck.dealCard();

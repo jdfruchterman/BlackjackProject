@@ -21,6 +21,8 @@ public int getHandValue() {
 	}
 	return handValue;
 }
+
+
 public void addCard(Card card) {
 	// add card to hand
 	hand.add(card);
