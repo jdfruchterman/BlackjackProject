@@ -42,6 +42,10 @@ public String toString() {
 	//needs completion
 	return "Hand [hand=" + hand + "]";
 }
+//public abstract String dealerMysteryToString();
+//public abstract int getDealerValue();
+//public abstract String get(int i);
+
 
 
 }
