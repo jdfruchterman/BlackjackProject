@@ -14,22 +14,30 @@ public Hand() {
 }
 public int getHandValue() {
 	int handValue = 0;
-	// loop through hand, add up values of ranks
+	for (int i = 0; i < hand.size(); i++) {
+		// loop through hand, add up values of ranks
+	handValue = handValue + hand.get(i).getValue();
+	
+	}
 	return handValue;
 }
-public void addCard() {
+public void addCard(Card card) {
 	// add card to hand
-	hand.add();
+	hand.add(card);
 	
 }
 public void clearHand() {
+	// needed for blackjack?
 	// loop through list and set each value to null
 }
 public List<Card> getCards(){
+	// needed for blackjack?
+	// needs completion
 	return hand;
 }
 @Override
 public String toString() {
+	//needs completion
 	return "Hand [hand=" + hand + "]";
 }
 
